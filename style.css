@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, rgb(255, 193, 59), rgb(249, 81, 20));
+}
+
+.search-container {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;  */
+  width: fit-content;
+  position: relative;
+  top: 45vh;
+  left: 40vw;
+}
+
+
+.wrapper {
+  max-width: 23vh;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 100%;
+  position: relative;
+}
+
+.wrapper input {
+  box-sizing: border-box;
+  background: linear-gradient(to right, rgb(237, 166, 68), rgb(228, 134, 46));
+  border: 0px solid black;
+  border-bottom: 2.5px solid rgb(249, 81, 20);
+  height: 8.5vh;
+  position: relative;
+  padding: 4px;
+  z-index: 2;
+  width: 23vw;
+}
+
+input:focus {
+  border: 2.5px solid rgb(249, 81, 20);
+  outline: 1.5px solid white;
+  border-radius: 2px;
+  padding: 3px;
+}
+
+.suggestions {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 23vw;
+  cursor: pointer;
+  padding: 0;
+}
+
+
+.suggestions ul{
+  list-style-type: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, rgb(237, 166, 68), rgb(228, 134, 46));
+}
+
+.suggestions ul li{
+  padding: 8px 16px;
+}
+
+.suggestions ul li:hover {
+  background-color: rgb(249, 81, 20);
+  cursor: pointer;
+}
