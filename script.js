@@ -32,7 +32,7 @@ function searchHandler(e) {
 
 function showSuggestions(results, inputVal) {
 	results.innerHTML = '';
-	results.style.display = 'inline-block';
+	results.style.display = 'inline-block';     //maybe this caused problems with display flex
 	const currSuggestions = search(inputVal);
 	for (let item of currSuggestions) {
 		const li = createLi(item);
@@ -68,7 +68,7 @@ function useSuggestion(e) {
 		suggestions.innerHTML = '';
 	}
 	if (fruit.includes(input.value)) {
-		suggestions.style.display = 'none';
+		suggestions.style.display = 'none';    //maybe this caused problems with display flex
 		suggestions.innerHTML = '';
 		return;
 	}
